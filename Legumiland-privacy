@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Politique de confidentialité – Legumiland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f7f7;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: #2e7d32;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 32px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 6px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 12px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .note {
+            background: #f0f7ff;
+            border: 1px solid #d6e9ff;
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin: 14px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .mono {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Politique de confidentialité</h1>
+    <p><strong>Application :</strong> Legumiland</p>
+    <p><strong>Dernière mise à jour :</strong> 09 février 2026</p>
+
+    <h2>Introduction</h2>
+    <p>
+        L’application <strong>Legumiland</strong> respecte la vie privée de ses utilisateurs.
+        Cette politique de confidentialité décrit les données traitées par l’application,
+        leurs finalités et les choix à votre disposition.
+    </p>
+
+    <div class="note">
+        <p>
+            <strong>Public concerné :</strong> Legumiland est destinée aux <strong>enfants</strong> et aux
+            <strong>enseignants</strong>. L’application propose deux modes (enfant / enseignant).
+        </p>
+    </div>
+
+    <h2>Compte et authentification</h2>
+    <p>
+        Legumiland propose une connexion et un accès à des fonctionnalités en ligne.
+        L’authentification et certaines données associées sont gérées via <strong>Firebase</strong>.
+    </p>
+
+    <h2>Données collectées</h2>
+    <p>Selon votre usage, l’application peut traiter les données suivantes :</p>
+
+    <ul>
+        <li>
+            <strong>Profil enfant :</strong> pseudo (stocké sur Firebase).
+            <br>
+            <em>Aucun âge n’est collecté.</em>
+        </li>
+        <li>
+            <strong>Avatar :</strong> stocké <strong>localement</strong> sur l’appareil.
+        </li>
+        <li>
+            <strong>Progression / statistiques de jeux :</strong> stockées <strong>localement</strong> sur l’appareil.
+        </li>
+        <li>
+            <strong>Potager de classe :</strong> données partagées entre enseignant et élèves, stockées via
+            <strong>Firebase / Firestore</strong>.
+        </li>
+        <li>
+            <strong>Photos (fiche légume) :</strong> si vous choisissez d’ajouter une photo via l’appareil photo,
+            l’application utilise l’accès caméra (et stockage/photos selon la version Android).
+        </li>
+        <li>
+            <strong>Recherche vocale :</strong> si vous utilisez la recherche par la voix (liste des légumes ou aide),
+            l’application utilise le micro pour capturer la requête vocale.
+        </li>
+        <li>
+            <strong>Localisation (optionnelle) :</strong> utilisée uniquement pour afficher une météo réelle.
+            Cette fonctionnalité est <strong>désactivée par défaut</strong> et peut être activée dans les paramètres.
+        </li>
+        <li>
+            <strong>Export PDF :</strong> l’export peut inclure la liste des élèves d’une classe
+            (pseudo / mot de passe).
+        </li>
+    </ul>
+
+    <h2>Ce que Legumiland ne collecte pas</h2>
+    <ul>
+        <li>Pas de chat, pas de messagerie, pas de contenu social.</li>
+        <li>Pas de collecte d’âge.</li>
+        <li>Pas d’achats intégrés.</li>
+    </ul>
+
+    <h2>Finalités d’utilisation des données</h2>
+    <p>Les données sont utilisées uniquement pour :</p>
+    <ul>
+        <li>permettre l’accès au mode en ligne (connexion / classe) via Firebase ;</li>
+        <li>gérer le potager de classe et la synchronisation des informations enseignant/élèves ;</li>
+        <li>enregistrer la progression et les paramètres localement sur l’appareil ;</li>
+        <li>permettre la recherche vocale (si activée/choisie) ;</li>
+        <li>permettre l’ajout de photos aux fiches légumes (si utilisé) ;</li>
+        <li>afficher une météo réelle via la localisation (si l’utilisateur l’active) ;</li>
+        <li>générer un export PDF à la demande (ex. liste d’élèves).</li>
+    </ul>
+
+    <h2>Partage des données</h2>
+    <p>
+        Legumiland ne vend pas les données et ne partage pas de données personnelles à des tiers à des fins publicitaires.
+    </p>
+    <p>
+        Certaines données sont hébergées et traitées via des services tiers nécessaires au fonctionnement :
+        <strong>Firebase / Firestore</strong>. Ces services peuvent traiter certaines informations techniques
+        conformément à leurs propres politiques.
+    </p>
+
+    <h2>Stockage des données</h2>
+    <ul>
+        <li><strong>Localement sur l’appareil :</strong> avatars, progression, paramètres.</li>
+        <li><strong>Sur Firebase / Firestore :</strong> pseudo (profil) et données du potager de classe.</li>
+    </ul>
+
+    <h2>Permissions Android</h2>
+    <p>L’application peut demander les autorisations suivantes selon vos usages :</p>
+    <ul>
+        <li><strong>Micro</strong> : recherche vocale (liste des légumes / aide).</li>
+        <li><strong>Caméra</strong> : ajout de photos lors de la création d’une fiche légume.</li>
+        <li><strong>Stockage / Photos</strong> : accès/gestion des images selon la version Android.</li>
+        <li><strong>Notifications</strong> : notifications applicatives (si activées).</li>
+        <li><strong>Localisation</strong> : météo réelle (désactivée par défaut, activable dans l’app).</li>
+        <li><strong>Internet</strong> : accès aux fonctionnalités en ligne via Firebase.</li>
+    </ul>
+
+    <h2>Sécurité</h2>
+    <p>
+        Legumiland met en œuvre des mesures raisonnables pour protéger les données traitées.
+        Les échanges réseau nécessaires au fonctionnement s’effectuent via des canaux sécurisés
+        fournis par les services utilisés (Firebase).
+    </p>
+
+    <h2>Suppression et conservation des données</h2>
+    <p>
+        Les données sont conservées <strong>tant que le compte existe</strong>.
+    </p>
+    <ul>
+        <li>
+            Vous pouvez supprimer les données via l’application (paramètres → <strong>reset</strong> global).
+        </li>
+        <li>
+            Vous pouvez également demander une suppression en contactant le développeur par email.
+        </li>
+    </ul>
+
+    <h2>Export PDF et confidentialité</h2>
+    <p>
+        Les exports PDF peuvent contenir des informations sensibles pour une classe (liste d’élèves,
+        pseudo / mot de passe). Il est recommandé de :
+    </p>
+    <ul>
+        <li>garder ces documents confidentiels (réservés à l’enseignant) ;</li>
+        <li>éviter de les partager publiquement ;</li>
+        <li>les supprimer lorsqu’ils ne sont plus nécessaires.</li>
+    </ul>
+
+    <h2>Modifications</h2>
+    <p>
+        Cette politique peut être mise à jour à tout moment. La date de mise à jour sera modifiée
+        en conséquence sur cette page.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+        Pour toute question concernant cette politique de confidentialité, vous pouvez contacter
+        le développeur à l’adresse suivante :
+    </p>
+    <p>
+        📧 <strong class="mono">camlot47@gmail.com</strong>
+    </p>
+
+    <div class="footer">
+        © 2026 Legumiland
+    </div>
+
+</div>
+
+</body>
+</html>
