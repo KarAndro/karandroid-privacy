@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoisPrécis — Privacy Policy / Politique de confidentialité</title>
+  <style>
+    :root {
+      --bg: #f5f1ea;
+      --card: #ffffff;
+      --muted: #6c675f;
+      --text: #222222;
+      --accent: #7a5c3e;
+      --accent-2: #a67c52;
+      --border: #e7ddd0;
+      --ok: #edf7ed;
+      --warn: #fff7e8;
+      --table: #faf7f2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f7f4ef 0%, #f2ede5 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.04);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+    .card {
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 {
+      color: var(--accent);
+      line-height: 1.25;
+      margin-top: 0;
+    }
+    h1 { font-size: 2rem; margin-bottom: 8px; }
+    h2 { font-size: 1.4rem; margin-bottom: 10px; }
+    h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    p, li, td, th { font-size: 1rem; }
+    .meta {
+      color: var(--muted);
+      margin: 0 0 14px 0;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .nav a {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--accent);
+      background: #fffaf4;
+      font-size: 0.95rem;
+    }
+    .note, .okbox, .warnbox {
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+    .note {
+      background: #fcf8f2;
+      border-left: 4px solid var(--accent);
+    }
+    .okbox {
+      background: var(--ok);
+      border-left: 4px solid #4c8c4a;
+    }
+    .warnbox {
+      background: var(--warn);
+      border-left: 4px solid #d28b15;
+    }
+    .lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .lang-col {
+      background: #fffdf9;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .lang-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #f3ebe0;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 4px;
+      background: var(--table);
+      overflow: hidden;
+      border-radius: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f3ebe0;
+      color: var(--accent);
+    }
+    .small { font-size: 0.93rem; color: var(--muted); }
+    ul { padding-left: 1.2rem; }
+    code {
+      background: #f1ece4;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.95em;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 0.93rem;
+      padding: 8px 4px 0;
+    }
+    @media (max-width: 860px) {
+      .lang-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 14px 10px 28px; }
+      .hero, .card { padding: 18px; border-radius: 14px; }
+      h1 { font-size: 1.55rem; }
+      h2 { font-size: 1.2rem; }
+      th, td { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>BoisPrécis — Privacy Policy / Politique de confidentialité</h1>
+      <p class="meta">Last update / Dernière mise à jour: 9 March 2026 / 9 mars 2026</p>
+      <p>
+        This document is designed for Google Play publication and includes a bilingual privacy policy
+        (French / English) plus a practical summary aligned with the Google Play Console “Data safety” form
+        for the current BoisPrécis implementation.
+      </p>
+      <div class="warnbox">
+        <strong>Before publishing:</strong> replace all <strong>“TO COMPLETE / À COMPLÉTER”</strong> fields with your real details,
+        and review this document again if you add analytics, crash reporting, advertising, account creation,
+        cloud sync, login, or any new SDK that sends data off device.
+      </div>
+      <div class="nav">
+        <a href="#datasafety">Google Play Data Safety</a>
+        <a href="#fr">Version française</a>
+        <a href="#en">English version</a>
+      </div>
+    </section>
+
+    <section class="card" id="datasafety">
+      <h2>Google Play Console — Data safety summary</h2>
+      <p>
+        Recommended answers below are tailored to the current BoisPrécis architecture as described in this project:
+        local storage, local calculations, local project/material/settings data, optional user-triggered export/share/backup,
+        and optional Google Play Billing donations without app-side collection of banking data.
+      </p>
+
+      <div class="okbox">
+        <strong>Recommended main answer for the current version:</strong><br />
+        <strong>No</strong> — the app does <strong>not collect or share required user data types</strong> in the sense of the Play Console
+        Data safety form, as long as BoisPrécis only processes user data locally on device and only transfers files or content
+        when the user explicitly triggers export/share/backup actions.
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Play Console question</th>
+            <th>Recommended answer</th>
+            <th>Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Does your app collect or share any of the required user data types?</td>
+            <td><strong>No</strong></td>
+            <td>
+              BoisPrécis is designed to work mainly <strong>locally on the device</strong>. User projects, cut lists,
+              materials, workshop notes, presets and settings are stored on device. Local-only processing does not need
+              to be disclosed as collected data in the Data safety form.
+            </td>
+          </tr>
+          <tr>
+            <td>Is all user data collected by your app encrypted in transit?</td>
+            <td><strong>Not applicable</strong> if you answer <strong>No</strong> above</td>
+            <td>
+              This question is only prompted if data collection is declared. For the current local-only configuration,
+              no app-side data collection is declared.
+            </td>
+          </tr>
+          <tr>
+            <td>Do you provide a way for users to request that their data is deleted?</td>
+            <td><strong>No</strong> in Play Console, unless you want to advertise a deletion request mechanism</td>
+            <td>
+              BoisPrécis does not create user accounts. Users can delete their local data directly from the app,
+              by clearing data, deleting backups/files, or uninstalling the app. A formal remote deletion request mechanism
+              is usually relevant when an app actually collects data off device or maintains user accounts.
+            </td>
+          </tr>
+          <tr>
+            <td>Account deletion questions</td>
+            <td><strong>Not applicable / No account creation</strong></td>
+            <td>
+              The current BoisPrécis implementation does not include account creation or sign-in.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <section class="card" id="fr">
+      <h2>Version française</h2>
+      <div class="lang-grid">
+        <div class="lang-col">
+          <div class="lang-badge">FR</div>
+          <h3>1. Responsable</h3>
+          <p>
+            Application : <strong>BoisPrécis</strong><br />
+            Éditeur / développeur : <strong>Thom</strong><br />
+            E-mail de contact : <strong>camlot47@gmail.com</strong><br />
+          </p>
+
+          <h3>2. Présentation</h3>
+          <p>
+            BoisPrécis est une application d’assistance d’atelier destinée à la menuiserie, au bricolage,
+            aux calculs techniques, au calepinage, à la gestion de matériaux et à la préparation de fabrication.
+            La protection de la vie privée de l’utilisateur fait partie des principes de conception de l’application.
+          </p>
+
+          <h3>3. Données traitées</h3>
+          <p>
+            Dans sa version actuelle, BoisPrécis fonctionne principalement en local sur l’appareil.
+            Les données suivantes peuvent être traitées localement :
+          </p>
+          <ul>
+            <li>projets, pièces, stocks, matériaux, notes d’atelier, paramètres, préférences et historiques créés par l’utilisateur ;</li>
+            <li>fichiers générés ou choisis par l’utilisateur, par exemple PDF, CSV, sauvegardes ou documents importés ;</li>
+            <li>informations techniques minimales nécessaires au bon fonctionnement des achats intégrés Google Play, si l’utilisateur effectue un don ou un achat ;</li>
+            <li>données locales utilisées pour générer des exports, des fiches, des optimisations et des documents.</li>
+          </ul>
+
+          <h3>4. Données non collectées intentionnellement</h3>
+          <p>Dans la version actuelle, l’application n’est pas conçue pour collecter auprès de l’éditeur :</p>
+          <ul>
+            <li>données bancaires ;</li>
+            <li>géolocalisation précise ;</li>
+            <li>contacts ;</li>
+            <li>photos, vidéos ou fichiers sans action explicite de l’utilisateur ;</li>
+            <li>données de santé ;</li>
+            <li>données publicitaires à des fins de ciblage ;</li>
+            <li>données de compte, car l’application ne propose pas de création de compte dans sa version actuelle.</li>
+          </ul>
+
+          <h3>5. Finalités</h3>
+          <ul>
+            <li>faire fonctionner les outils de calcul, conversion, optimisation et assistance d’atelier ;</li>
+            <li>enregistrer localement les préférences et paramètres de l’utilisateur ;</li>
+            <li>permettre la création, la modification, l’export, l’import, la sauvegarde et la restauration des contenus choisis par l’utilisateur ;</li>
+            <li>gérer les dons ou achats intégrés via Google Play, le cas échéant ;</li>
+            <li>assurer la maintenance, la sécurité et la compatibilité technique de l’application.</li>
+          </ul>
+
+          <h3>6. Base légale</h3>
+          <p>Lorsque le RGPD s’applique, les traitements reposent selon le cas sur :</p>
+          <ul>
+            <li>l’exécution du service demandé par l’utilisateur ;</li>
+            <li>le consentement de l’utilisateur lorsqu’il est nécessaire ;</li>
+            <li>l’intérêt légitime de l’éditeur à assurer la sécurité et le bon fonctionnement de l’application ;</li>
+            <li>le respect des obligations légales applicables.</li>
+          </ul>
+        </div>
+
+        <div class="lang-col">
+          <div class="lang-badge">FR</div>
+          <h3>7. Stockage des données</h3>
+          <p>
+            Les données créées dans BoisPrécis sont, dans la version actuelle, stockées principalement localement sur
+            l’appareil de l’utilisateur. Elles restent sous le contrôle de l’utilisateur jusqu’à leur suppression,
+            leur écrasement, leur export ou la désinstallation de l’application.
+          </p>
+
+          <h3>8. Partage des données</h3>
+          <p>
+            BoisPrécis ne vend pas les données personnelles. L’application n’est pas conçue pour partager des données
+            utilisateur avec des tiers à des fins publicitaires ou marketing.
+          </p>
+          <p>Des données peuvent néanmoins être transmises dans les cas suivants :</p>
+          <ul>
+            <li>lorsque l’utilisateur déclenche explicitement un partage, un export, une ouverture ou une sauvegarde de fichier ;</li>
+            <li>lorsqu’un achat ou un don est géré par Google Play ;</li>
+            <li>lorsqu’un service système Android est utilisé pour ouvrir, enregistrer ou partager un document à la demande de l’utilisateur.</li>
+          </ul>
+          <p>
+            Ces actions dépendent du choix explicite de l’utilisateur et des applications ou services qu’il sélectionne.
+          </p>
+
+          <h3>9. Achats intégrés et dons</h3>
+          <p>
+            Les paiements éventuels sont traités par Google Play. BoisPrécis ne collecte pas les coordonnées bancaires
+            de l’utilisateur. Google Play peut traiter les données nécessaires à la transaction selon ses propres règles
+            et politiques.
+          </p>
+
+          <h3>10. Permissions</h3>
+          <p>
+            L’application peut utiliser uniquement les accès nécessaires aux fonctionnalités proposées,
+            par exemple pour sélectionner, enregistrer, partager, importer ou exporter un fichier.
+            Ces actions interviennent uniquement à la demande de l’utilisateur.
+          </p>
+
+          <h3>11. Durée de conservation</h3>
+          <p>
+            Les données locales sont conservées jusqu’à suppression par l’utilisateur, nettoyage de l’application,
+            écrasement par restauration, suppression des fichiers concernés, ou désinstallation.
+          </p>
+
+          <h3>12. Sécurité</h3>
+          <p>
+            Des mesures raisonnables sont mises en œuvre pour limiter les accès non autorisés, la perte, l’altération
+            ou la divulgation des données. Aucun système n’étant totalement infaillible, l’utilisateur reste responsable
+            de la sécurité de son appareil, de ses sauvegardes et des documents qu’il partage.
+          </p>
+
+          <h3>13. Vos droits</h3>
+          <p>
+            Selon la législation applicable, l’utilisateur peut demander l’accès, la rectification, l’effacement,
+            la limitation ou des informations complémentaires concernant les données éventuellement traitées hors appareil.
+            Contact : <strong>À COMPLÉTER</strong>
+          </p>
+
+          <h3>14. Enfants</h3>
+          <p>
+            BoisPrécis n’est pas conçu comme un service destiné spécifiquement aux enfants.
+          </p>
+
+          <h3>15. Modifications</h3>
+          <p>
+            Cette politique peut être mise à jour pour refléter les évolutions de l’application, des obligations légales
+            ou des services utilisés. La date de mise à jour figurant en haut du document fera foi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="en">
+      <h2>English version</h2>
+      <div class="lang-grid">
+        <div class="lang-col">
+          <div class="lang-badge">EN</div>
+          <h3>1. Controller / Publisher</h3>
+          <p>
+            App: <strong>BoisPrécis</strong><br />
+            Publisher / developer: <strong>Thom</strong><br />
+            Contact email: <strong>camlot47@gmail.com</strong><br />
+          </p>
+
+          <h3>2. Overview</h3>
+          <p>
+            BoisPrécis is a workshop assistant app for woodworking, DIY, technical calculations,
+            cut-list optimization, materials management and fabrication preparation.
+            Protecting user privacy is part of the app design approach.
+          </p>
+
+          <h3>3. Data handled by the app</h3>
+          <p>
+            In its current version, BoisPrécis works mainly locally on the user’s device.
+            The following categories of data may be processed locally:
+          </p>
+          <ul>
+            <li>projects, pieces, stock, materials, workshop notes, settings, preferences and history created by the user;</li>
+            <li>files generated or selected by the user, such as PDF, CSV, backup files, or imported documents;</li>
+            <li>minimal technical information required for Google Play in-app purchases or donations, if the user makes one;</li>
+            <li>local data required to generate exports, workshop sheets, optimization results and documents.</li>
+          </ul>
+
+          <h3>4. Data not intentionally collected from users by the publisher</h3>
+          <p>In the current version, the app is not designed to collect from the publisher side:</p>
+          <ul>
+            <li>bank card details or payment card data;</li>
+            <li>precise location;</li>
+            <li>contacts;</li>
+            <li>photos, videos or files without explicit user action;</li>
+            <li>health data;</li>
+            <li>advertising data for targeted ads;</li>
+            <li>account data, because the current version does not provide account creation.</li>
+          </ul>
+
+          <h3>5. Purposes</h3>
+          <ul>
+            <li>to provide calculation, conversion, optimization and workshop assistance features;</li>
+            <li>to store user preferences and settings locally;</li>
+            <li>to let users create, edit, import, export, back up and restore content they choose to manage;</li>
+            <li>to handle donations or in-app purchases through Google Play where applicable;</li>
+            <li>to maintain app security, technical compatibility and reliability.</li>
+          </ul>
+
+          <h3>6. Legal basis</h3>
+          <p>Where the GDPR applies, processing may rely on:</p>
+          <ul>
+            <li>performance of the service requested by the user;</li>
+            <li>user consent where required;</li>
+            <li>the publisher’s legitimate interest in security and proper app operation;</li>
+            <li>compliance with applicable legal obligations.</li>
+          </ul>
+        </div>
+
+        <div class="lang-col">
+          <div class="lang-badge">EN</div>
+          <h3>7. Data storage</h3>
+          <p>
+            In the current version, data created in BoisPrécis is stored mainly locally on the user’s device.
+            It remains under the user’s control until deletion, overwrite, export, or app uninstall.
+          </p>
+
+          <h3>8. Data sharing</h3>
+          <p>
+            BoisPrécis does not sell personal data. The app is not designed to share user data with third parties
+            for advertising or marketing purposes.
+          </p>
+          <p>Data may nevertheless be transferred in the following cases:</p>
+          <ul>
+            <li>when the user explicitly starts a share, export, open, or backup action;</li>
+            <li>when a purchase or donation is processed through Google Play;</li>
+            <li>when an Android system component is used to open, save, or share a document at the user’s request.</li>
+          </ul>
+          <p>
+            These transfers depend on the user’s explicit choice and on the apps or services selected by the user.
+          </p>
+
+          <h3>9. In-app purchases and donations</h3>
+          <p>
+            Payments, where applicable, are processed by Google Play. BoisPrécis does not collect the user’s banking
+            details. Google Play may process transaction-related data under its own terms and privacy rules.
+          </p>
+
+          <h3>10. Permissions</h3>
+          <p>
+            The app may use only the access strictly needed for its features, for example to select, save, share,
+            import or export a file. These actions occur only at the user’s request.
+          </p>
+
+          <h3>11. Retention</h3>
+          <p>
+            Local data is kept until the user deletes it, clears app data, overwrites it through restore,
+            deletes the related files, or uninstalls the app.
+          </p>
+
+          <h3>12. Security</h3>
+          <p>
+            Reasonable measures are implemented to reduce the risk of unauthorized access, loss, alteration,
+            or disclosure of data. No system can guarantee absolute security, and users remain responsible for
+            protecting their device, backups and shared documents.
+          </p>
+
+          <h3>13. User rights</h3>
+          <p>
+            Under applicable law, users may request access, rectification, deletion, restriction, or additional
+            information regarding any personal data that may be processed off device.
+            Contact: <strong>TO COMPLETE</strong>
+          </p>
+
+          <h3>14. Children</h3>
+          <p>
+            BoisPrécis is not designed as a service specifically directed to children.
+          </p>
+
+          <h3>15. Changes</h3>
+          <p>
+            This policy may be updated to reflect app changes, legal requirements, or changes in services used.
+            The update date shown at the top of this document is the reference date.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+</body>
+</html>
