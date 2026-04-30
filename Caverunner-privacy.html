@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cave Runner — Privacy Policy / Politique de confidentialité</title>
+  <style>
+    :root {
+      --bg: #0f1118;
+      --card: #171b26;
+      --card-2: #1e2433;
+      --muted: #aab2c5;
+      --text: #f4f6fb;
+      --accent: #ffb84d;
+      --accent-2: #5ee1ff;
+      --border: #2d3548;
+      --ok: #14281d;
+      --warn: #2c2411;
+      --table: #151a25;
+      --danger: #ff7a7a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(94,225,255,0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(255,184,77,0.16), transparent 26%),
+        linear-gradient(180deg, #0c0f16 0%, #121724 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    .hero, .card {
+      background: rgba(23, 27, 38, 0.96);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 38px rgba(0,0,0,0.32);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+    .card {
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 {
+      color: var(--accent);
+      line-height: 1.25;
+      margin-top: 0;
+    }
+    h1 { font-size: 2rem; margin-bottom: 8px; }
+    h2 { font-size: 1.4rem; margin-bottom: 10px; }
+    h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    p, li, td, th { font-size: 1rem; }
+    a { color: var(--accent-2); }
+    .meta {
+      color: var(--muted);
+      margin: 0 0 14px 0;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .nav a {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--accent);
+      background: #121724;
+      font-size: 0.95rem;
+    }
+    .note, .okbox, .warnbox {
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+    .note {
+      background: #171d2b;
+      border-left: 4px solid var(--accent-2);
+    }
+    .okbox {
+      background: var(--ok);
+      border-left: 4px solid #4caf6f;
+    }
+    .warnbox {
+      background: var(--warn);
+      border-left: 4px solid var(--accent);
+    }
+    .lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .lang-col {
+      background: var(--card-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .lang-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #2d3548;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 4px;
+      background: var(--table);
+      overflow: hidden;
+      border-radius: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #222a3b;
+      color: var(--accent);
+    }
+    .small { font-size: 0.93rem; color: var(--muted); }
+    ul { padding-left: 1.2rem; }
+    code {
+      background: #101521;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.95em;
+      color: var(--accent-2);
+    }
+    footer {
+      color: var(--muted);
+      font-size: 0.93rem;
+      padding: 8px 4px 0;
+    }
+    @media (max-width: 860px) {
+      .lang-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 14px 10px 28px; }
+      .hero, .card { padding: 18px; border-radius: 14px; }
+      h1 { font-size: 1.55rem; }
+      h2 { font-size: 1.2rem; }
+      th, td { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Cave Runner — Privacy Policy / Politique de confidentialité</h1>
+      <p class="meta">Last update / Dernière mise à jour: 30 April 2026 / 30 avril 2026</p>
+      <p>
+        This document is designed for Google Play publication and includes a bilingual privacy policy
+        (French / English) plus a practical summary aligned with the Google Play Console “Data safety” form
+        for the current Cave Runner implementation.
+      </p>
+      <div class="warnbox">
+        <strong>Before publishing:</strong> review this policy again if you add analytics, crash reporting,
+        advertising, account creation, online leaderboards, cloud sync, login, multiplayer, external SDKs,
+        or any feature that sends data off device.
+      </div>
+      <div class="nav">
+        <a href="#datasafety">Google Play Data Safety</a>
+        <a href="#fr">Version française</a>
+        <a href="#en">English version</a>
+      </div>
+    </section>
+
+    <section class="card" id="datasafety">
+      <h2>Google Play Console — Data safety summary</h2>
+      <p>
+        Recommended answers below are tailored to the current Cave Runner architecture as described in this project:
+        offline gameplay, local settings, local statistics, local best scores, locally saved runs, custom tables created
+        by the user, local audio/settings preferences, and no account creation.
+      </p>
+
+      <div class="okbox">
+        <strong>Recommended main answer for the current version:</strong><br />
+        <strong>No</strong> — the app does <strong>not collect or share required user data types</strong> in the sense of the Google Play
+        Data safety form, as long as Cave Runner only processes game data locally on the device and does not integrate
+        analytics, advertising SDKs, remote crash reporting, cloud sync, accounts, online leaderboards, or multiplayer services.
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Play Console question</th>
+            <th>Recommended answer</th>
+            <th>Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Does your app collect or share any of the required user data types?</td>
+            <td><strong>No</strong></td>
+            <td>
+              Cave Runner is designed to work locally on the device. Saved games, custom tables, settings,
+              local statistics and best scores are stored locally and are not sent to the publisher.
+            </td>
+          </tr>
+          <tr>
+            <td>Is all user data collected by your app encrypted in transit?</td>
+            <td><strong>Not applicable</strong> if you answer <strong>No</strong> above</td>
+            <td>
+              This question is only relevant if data collection is declared. For the current offline/local configuration,
+              no app-side data collection is declared.
+            </td>
+          </tr>
+          <tr>
+            <td>Do you provide a way for users to request that their data is deleted?</td>
+            <td><strong>No</strong> in Play Console, unless you want to advertise a deletion request mechanism</td>
+            <td>
+              Cave Runner does not create user accounts and does not store personal data on a server controlled by the publisher.
+              Users can delete local data by using in-app reset/delete options where available, by clearing app data,
+              or by uninstalling the app.
+            </td>
+          </tr>
+          <tr>
+            <td>Account deletion questions</td>
+            <td><strong>Not applicable / No account creation</strong></td>
+            <td>
+              The current Cave Runner implementation does not include account creation or sign-in.
+            </td>
+          </tr>
+          <tr>
+            <td>Advertising ID</td>
+            <td><strong>No</strong>, if no ad SDK is included</td>
+            <td>
+              Cave Runner should not declare or use the advertising ID unless advertising or analytics SDKs are added.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note">
+        <strong>Important:</strong> if you later add Google Play Games Services, Firebase Analytics, Crashlytics,
+        AdMob, online scores, cloud saves, or user accounts, this policy and your Play Console Data safety answers
+        must be updated before publication.
+      </div>
+    </section>
+
+    <section class="card" id="fr">
+      <h2>Version française</h2>
+      <div class="lang-grid">
+        <div class="lang-col">
+          <div class="lang-badge">FR</div>
+          <h3>1. Responsable</h3>
+          <p>
+            Application : <strong>Cave Runner</strong><br />
+            Éditeur / développeur : <strong>Thom</strong><br />
+            E-mail de contact : <strong>camlot47@gmail.com</strong><br />
+          </p>
+
+          <h3>2. Présentation</h3>
+          <p>
+            Cave Runner est un jeu mobile d’arcade et de réflexion inspiré des jeux de cavernes rétro.
+            Le joueur explore des tableaux, collecte des gemmes, évite les dangers, utilise des sauvegardes locales
+            et peut créer ou modifier des tableaux lorsque l’éditeur est disponible.
+            La protection de la vie privée de l’utilisateur fait partie des principes de conception de l’application.
+          </p>
+
+          <h3>3. Données traitées</h3>
+          <p>
+            Dans sa version actuelle, Cave Runner fonctionne principalement hors ligne et localement sur l’appareil.
+            Les données suivantes peuvent être traitées localement :
+          </p>
+          <ul>
+            <li>paramètres du jeu, préférences audio, préférences d’interface et options d’accessibilité ;</li>
+            <li>progression, sauvegardes locales, statistiques de jeu, meilleurs scores locaux et tableaux débloqués ;</li>
+            <li>tableaux créés ou modifiés par l’utilisateur dans l’éditeur de tableaux ;</li>
+            <li>données techniques nécessaires au fonctionnement local du jeu, de l’affichage, du son et des sauvegardes.</li>
+          </ul>
+
+          <h3>4. Données non collectées intentionnellement</h3>
+          <p>Dans la version actuelle, l’application n’est pas conçue pour collecter auprès de l’éditeur :</p>
+          <ul>
+            <li>nom, prénom, adresse, numéro de téléphone ou adresse e-mail de l’utilisateur ;</li>
+            <li>données bancaires ;</li>
+            <li>géolocalisation précise ;</li>
+            <li>contacts ;</li>
+            <li>photos, vidéos, microphone ou fichiers personnels ;</li>
+            <li>données de santé ;</li>
+            <li>données publicitaires à des fins de ciblage ;</li>
+            <li>données de compte, car l’application ne propose pas de création de compte dans sa version actuelle.</li>
+          </ul>
+
+          <h3>5. Finalités</h3>
+          <ul>
+            <li>faire fonctionner le jeu, les niveaux, les tableaux, les animations, les sons et les mécaniques de gameplay ;</li>
+            <li>enregistrer localement la progression, les meilleurs scores, les statistiques et les préférences de l’utilisateur ;</li>
+            <li>permettre la création, la modification, la sauvegarde et le chargement local de tableaux ou de parties ;</li>
+            <li>assurer la maintenance, la sécurité et la compatibilité technique de l’application.</li>
+          </ul>
+
+          <h3>6. Base légale</h3>
+          <p>Lorsque le RGPD s’applique, les traitements reposent selon le cas sur :</p>
+          <ul>
+            <li>l’exécution du service demandé par l’utilisateur ;</li>
+            <li>le consentement de l’utilisateur lorsqu’il est nécessaire ;</li>
+            <li>l’intérêt légitime de l’éditeur à assurer la sécurité et le bon fonctionnement de l’application ;</li>
+            <li>le respect des obligations légales applicables.</li>
+          </ul>
+        </div>
+
+        <div class="lang-col">
+          <div class="lang-badge">FR</div>
+          <h3>7. Stockage des données</h3>
+          <p>
+            Les données créées ou générées dans Cave Runner sont, dans la version actuelle, stockées principalement
+            localement sur l’appareil de l’utilisateur. Elles restent sous le contrôle de l’utilisateur jusqu’à leur
+            suppression, leur écrasement, la réinitialisation des données de l’application ou la désinstallation.
+          </p>
+
+          <h3>8. Partage des données</h3>
+          <p>
+            Cave Runner ne vend pas les données personnelles. L’application n’est pas conçue pour partager des données
+            utilisateur avec des tiers à des fins publicitaires ou marketing.
+          </p>
+          <p>Des données peuvent néanmoins être transmises dans les cas suivants :</p>
+          <ul>
+            <li>si l’utilisateur utilise volontairement une fonctionnalité système de partage, d’export ou de sauvegarde proposée par Android ;</li>
+            <li>si une fonctionnalité externe est ajoutée ultérieurement, par exemple classement en ligne, synchronisation cloud, publicités, rapports de crash ou analytics ;</li>
+            <li>si la loi, une autorité compétente ou une obligation légale l’exige.</li>
+          </ul>
+          <p>
+            Dans la version actuelle décrite par cette politique, aucune transmission automatique de données personnelles
+            vers l’éditeur n’est prévue.
+          </p>
+
+          <h3>9. Achats, publicités et services tiers</h3>
+          <p>
+            Dans sa version actuelle, Cave Runner n’est pas conçu pour collecter des données bancaires.
+            Si des achats intégrés, publicités, classements en ligne, services Google Play Games, analytics,
+            rapports de crash ou services similaires sont ajoutés, cette politique sera mise à jour pour expliquer
+            les données concernées et les finalités associées.
+          </p>
+
+          <h3>10. Permissions</h3>
+          <p>
+            L’application utilise uniquement les accès nécessaires à ses fonctionnalités. Dans la version actuelle,
+            Cave Runner n’a pas besoin d’accéder à la localisation précise, aux contacts, à la caméra, au microphone
+            ou aux fichiers personnels de l’utilisateur pour fonctionner comme jeu local.
+          </p>
+
+          <h3>11. Durée de conservation</h3>
+          <p>
+            Les données locales sont conservées jusqu’à suppression par l’utilisateur, réinitialisation de l’application,
+            écrasement par une nouvelle sauvegarde, suppression des données Android de l’application ou désinstallation.
+          </p>
+
+          <h3>12. Sécurité</h3>
+          <p>
+            Des mesures raisonnables sont mises en œuvre pour limiter les accès non autorisés, la perte, l’altération
+            ou la divulgation des données. Aucun système n’étant totalement infaillible, l’utilisateur reste responsable
+            de la sécurité de son appareil et des éventuels fichiers qu’il choisit de partager ou sauvegarder.
+          </p>
+
+          <h3>13. Vos droits</h3>
+          <p>
+            Selon la législation applicable, l’utilisateur peut demander l’accès, la rectification, l’effacement,
+            la limitation ou des informations complémentaires concernant les données éventuellement traitées hors appareil.
+            Pour toute question : <strong>camlot47@gmail.com</strong>
+          </p>
+
+          <h3>14. Enfants</h3>
+          <p>
+            Cave Runner n’est pas conçu comme un service destiné spécifiquement aux enfants. Si l’application est proposée
+            à un public familial ou plus jeune, les réglages de public cible et les obligations Google Play correspondantes
+            devront être respectés dans la Play Console.
+          </p>
+
+          <h3>15. Modifications</h3>
+          <p>
+            Cette politique peut être mise à jour pour refléter les évolutions de l’application, des obligations légales
+            ou des services utilisés. La date de mise à jour figurant en haut du document fera foi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="en">
+      <h2>English version</h2>
+      <div class="lang-grid">
+        <div class="lang-col">
+          <div class="lang-badge">EN</div>
+          <h3>1. Controller / Publisher</h3>
+          <p>
+            App: <strong>Cave Runner</strong><br />
+            Publisher / developer: <strong>Thom</strong><br />
+            Contact email: <strong>camlot47@gmail.com</strong><br />
+          </p>
+
+          <h3>2. Overview</h3>
+          <p>
+            Cave Runner is a mobile arcade and puzzle game inspired by retro cave exploration games.
+            The player explores tables, collects gems, avoids hazards, uses local saves, and may create or edit
+            tables when the editor is available. Protecting user privacy is part of the app design approach.
+          </p>
+
+          <h3>3. Data handled by the app</h3>
+          <p>
+            In its current version, Cave Runner works mainly offline and locally on the user’s device.
+            The following categories of data may be processed locally:
+          </p>
+          <ul>
+            <li>game settings, audio preferences, interface preferences and accessibility options;</li>
+            <li>progression, local saves, game statistics, local best scores and unlocked tables;</li>
+            <li>tables created or modified by the user in the table editor;</li>
+            <li>technical data required for the local operation of gameplay, display, audio and save features.</li>
+          </ul>
+
+          <h3>4. Data not intentionally collected from users by the publisher</h3>
+          <p>In the current version, the app is not designed to collect from the publisher side:</p>
+          <ul>
+            <li>the user’s name, address, phone number or email address;</li>
+            <li>bank card details or payment card data;</li>
+            <li>precise location;</li>
+            <li>contacts;</li>
+            <li>photos, videos, microphone input or personal files;</li>
+            <li>health data;</li>
+            <li>advertising data for targeted ads;</li>
+            <li>account data, because the current version does not provide account creation.</li>
+          </ul>
+
+          <h3>5. Purposes</h3>
+          <ul>
+            <li>to provide the game, levels, tables, animations, audio and gameplay mechanics;</li>
+            <li>to store user progression, best scores, statistics and preferences locally;</li>
+            <li>to allow local creation, editing, saving and loading of tables or game runs;</li>
+            <li>to maintain app security, technical compatibility and reliability.</li>
+          </ul>
+
+          <h3>6. Legal basis</h3>
+          <p>Where the GDPR applies, processing may rely on:</p>
+          <ul>
+            <li>performance of the service requested by the user;</li>
+            <li>user consent where required;</li>
+            <li>the publisher’s legitimate interest in security and proper app operation;</li>
+            <li>compliance with applicable legal obligations.</li>
+          </ul>
+        </div>
+
+        <div class="lang-col">
+          <div class="lang-badge">EN</div>
+          <h3>7. Data storage</h3>
+          <p>
+            In the current version, data created or generated in Cave Runner is stored mainly locally on the user’s device.
+            It remains under the user’s control until deletion, overwrite, app data reset, or app uninstall.
+          </p>
+
+          <h3>8. Data sharing</h3>
+          <p>
+            Cave Runner does not sell personal data. The app is not designed to share user data with third parties
+            for advertising or marketing purposes.
+          </p>
+          <p>Data may nevertheless be transferred in the following cases:</p>
+          <ul>
+            <li>if the user voluntarily uses an Android system share, export or backup feature;</li>
+            <li>if an external feature is added later, such as online leaderboard, cloud sync, ads, crash reporting or analytics;</li>
+            <li>if required by law, competent authority or legal obligation.</li>
+          </ul>
+          <p>
+            In the current version described by this policy, no automatic transfer of personal data to the publisher is planned.
+          </p>
+
+          <h3>9. Purchases, ads and third-party services</h3>
+          <p>
+            In its current version, Cave Runner is not designed to collect banking data.
+            If in-app purchases, ads, online leaderboards, Google Play Games services, analytics, crash reporting,
+            or similar services are added, this policy will be updated to explain the relevant data and purposes.
+          </p>
+
+          <h3>10. Permissions</h3>
+          <p>
+            The app uses only the access required for its features. In the current version, Cave Runner does not need
+            access to precise location, contacts, camera, microphone or the user’s personal files to operate as a local game.
+          </p>
+
+          <h3>11. Retention</h3>
+          <p>
+            Local data is kept until the user deletes it, resets the app, overwrites it with a new save, clears Android app data,
+            or uninstalls the app.
+          </p>
+
+          <h3>12. Security</h3>
+          <p>
+            Reasonable measures are implemented to reduce the risk of unauthorized access, loss, alteration,
+            or disclosure of data. No system can guarantee absolute security, and users remain responsible for protecting
+            their device and any files they choose to share or back up.
+          </p>
+
+          <h3>13. User rights</h3>
+          <p>
+            Under applicable law, users may request access, rectification, deletion, restriction, or additional information
+            regarding any personal data that may be processed off device. For any question: <strong>camlot47@gmail.com</strong>
+          </p>
+
+          <h3>14. Children</h3>
+          <p>
+            Cave Runner is not designed as a service specifically directed to children. If the app is offered to a family
+            or younger audience, the corresponding Google Play target audience settings and obligations must be respected
+            in the Play Console.
+          </p>
+
+          <h3>15. Changes</h3>
+          <p>
+            This policy may be updated to reflect app changes, legal requirements, or changes in services used.
+            The update date shown at the top of this document is the reference date.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Cave Runner — Privacy Policy / Politique de confidentialité. This page is provided for app store publication
+        and user information. / Cette page est fournie pour la publication sur les stores et l’information des utilisateurs.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
