@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Politique de confidentialité de l'application KarAndroid.">
+    <title>Politique de confidentialité – KarAndroid</title>
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --card: #ffffff;
+            --text: #1f2933;
+            --muted: #5f6b7a;
+            --primary: #1976d2;
+            --primary-dark: #0f4f91;
+            --border: #e3e8ef;
+            --success-bg: #eaf7ef;
+            --success-text: #14532d;
+            --warning-bg: #fff7e6;
+            --warning-text: #7a4b00;
+            --code-bg: #f0f3f7;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #eef5ff 0%, var(--bg) 280px);
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 32px 16px 56px;
+        }
+
+        .container {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            padding: 34px 32px 28px;
+            background: linear-gradient(135deg, #1976d2 0%, #6f29ec 100%);
+            color: #ffffff;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 5vw, 3rem);
+            line-height: 1.1;
+        }
+
+        header p {
+            margin: 6px 0;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        main {
+            padding: 30px 32px 38px;
+        }
+
+        h2 {
+            margin-top: 34px;
+            margin-bottom: 12px;
+            color: var(--primary-dark);
+            font-size: 1.35rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            margin-top: 22px;
+            color: #26384d;
+            font-size: 1.05rem;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin: 10px 0 14px;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin: 4px 0 26px;
+        }
+
+        .summary-card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 14px 16px;
+            background: #fbfdff;
+        }
+
+        .summary-card strong {
+            display: block;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .notice {
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin: 16px 0;
+        }
+
+        .notice.success {
+            background: var(--success-bg);
+            color: var(--success-text);
+            border: 1px solid #c7ead3;
+        }
+
+        .notice.warning {
+            background: var(--warning-bg);
+            color: var(--warning-text);
+            border: 1px solid #ffe0a3;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            margin: 16px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 680px;
+            background: #ffffff;
+        }
+
+        th,
+        td {
+            padding: 12px 14px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #f2f6fb;
+            color: #26384d;
+            font-size: 0.95rem;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        code {
+            background: var(--code-bg);
+            border-radius: 6px;
+            padding: 2px 6px;
+            font-size: 0.92em;
+        }
+
+        footer {
+            padding: 20px 32px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.95rem;
+            background: #fbfdff;
+        }
+
+        @media (max-width: 640px) {
+            .page {
+                padding: 16px 10px 36px;
+            }
+
+            header,
+            main,
+            footer {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .container {
+                border-radius: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="container">
+        <header>
+            <h1>Politique de confidentialité</h1>
+            <p><strong>Application :</strong> KarAndroid</p>
+            <p><strong>Développeur :</strong> KarAndroid / TBY</p>
+            <p><strong>Dernière mise à jour :</strong> 21 mai 2026</p>
+        </header>
+
+        <main>
+            <section aria-labelledby="resume">
+                <h2 id="resume">Résumé</h2>
+                <div class="summary">
+                    <div class="summary-card">
+                        <strong>Aucun compte utilisateur</strong>
+                        KarAndroid ne demande pas de créer un compte dans l'application.
+                    </div>
+                    <div class="summary-card">
+                        <strong>Données locales</strong>
+                        Les playlists, réglages, paroles, historiques et journaux techniques sont stockés sur l'appareil.
+                    </div>
+                    <div class="summary-card">
+                        <strong>Services tiers</strong>
+                        Certaines fonctions utilisent YouTube, LRCLib, Google Cast, Google Play et la reconnaissance vocale Android.
+                    </div>
+                    <div class="summary-card">
+                        <strong>Aucune vente de données</strong>
+                        Le développeur ne vend pas les données des utilisateurs.
+                    </div>
+                </div>
+
+                <div class="notice warning">
+                    Cette politique décrit le fonctionnement de KarAndroid. Les services tiers utilisés par certaines fonctionnalités peuvent appliquer leurs propres règles de confidentialité.
+                </div>
+            </section>
+
+            <section aria-labelledby="introduction">
+                <h2 id="introduction">1. Introduction</h2>
+                <p>
+                    KarAndroid est une application de karaoké permettant notamment de rechercher des vidéos, lire des contenus YouTube, gérer des playlists, afficher des paroles synchronisées, utiliser des vidéos locales référencées dans l'application et personnaliser certains réglages.
+                </p>
+                <p>
+                    Cette politique explique quelles données peuvent être utilisées, comment elles sont traitées et quels choix sont disponibles pour l'utilisateur.
+                </p>
+            </section>
+
+            <section aria-labelledby="responsable">
+                <h2 id="responsable">2. Responsable et contact</h2>
+                <p>
+                    Pour toute question concernant cette politique ou le traitement des données dans KarAndroid, vous pouvez contacter le développeur :
+                </p>
+                <p>
+                    <strong>E-mail :</strong> <a href="mailto:camlot47@gmail.com">contact</a>
+                </p>
+            </section>
+
+            <section aria-labelledby="donnees">
+                <h2 id="donnees">3. Données traitées par l'application</h2>
+                <p>
+                    KarAndroid ne met pas en place de serveur propriétaire destiné à collecter les données personnelles des utilisateurs. Cependant, l'application manipule certaines données nécessaires à son fonctionnement.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Type de donnée</th>
+                            <th>Exemples</th>
+                            <th>Utilisation</th>
+                            <th>Stockage</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Données de recherche</td>
+                            <td>Texte saisi dans le champ de recherche, recherche vocale convertie en texte</td>
+                            <td>Rechercher des chansons, vidéos ou paroles</td>
+                            <td>Localement pour l'historique de recherche et/ou transmis au service utilisé pour répondre à la recherche</td>
+                        </tr>
+                        <tr>
+                            <td>Playlists et favoris</td>
+                            <td>Nom de playlist, titres ajoutés, identifiants vidéo YouTube</td>
+                            <td>Gérer les listes de lecture de l'utilisateur</td>
+                            <td>Localement sur l'appareil</td>
+                        </tr>
+                        <tr>
+                            <td>Paroles et fichiers LRC</td>
+                            <td>Paroles synchronisées, paroles importées ou modifiées</td>
+                            <td>Afficher et synchroniser les paroles pendant la lecture</td>
+                            <td>Localement sur l'appareil, sauf recherche de paroles en ligne</td>
+                        </tr>
+                        <tr>
+                            <td>Réglages</td>
+                            <td>Thème, couleurs, options de lecture, options de paroles, préférences d'affichage</td>
+                            <td>Personnaliser l'expérience utilisateur</td>
+                            <td>Localement sur l'appareil</td>
+                        </tr>
+                        <tr>
+                            <td>Journaux techniques locaux</td>
+                            <td>Erreurs non fatales, événements de lecture, aide au diagnostic</td>
+                            <td>Aider l'utilisateur à comprendre ou signaler un problème</td>
+                            <td>Localement, export uniquement si l'utilisateur le décide</td>
+                        </tr>
+                        <tr>
+                            <td>Données d'achat</td>
+                            <td>Statut d'un don, montant du don, confirmation de consommation d'un produit intégré</td>
+                            <td>Gérer les dons via Google Play Billing</td>
+                            <td>Transaction traitée par Google Play ; état simplifié conservé localement par l'application</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section aria-labelledby="micro">
+                <h2 id="micro">4. Microphone et recherche vocale</h2>
+                <p>
+                    KarAndroid peut demander l'autorisation d'utiliser le microphone uniquement pour lancer une recherche vocale à la demande de l'utilisateur.
+                </p>
+                <ul>
+                    <li>L'application ne lance pas d'écoute en arrière-plan.</li>
+                    <li>L'application ne stocke pas d'enregistrement audio.</li>
+                    <li>La voix peut être traitée par le service de reconnaissance vocale disponible sur l'appareil, par exemple un service Android ou Google selon la configuration du téléphone.</li>
+                    <li>L'utilisateur peut refuser ou retirer cette autorisation à tout moment depuis les paramètres Android.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="services">
+                <h2 id="services">5. Services tiers utilisés</h2>
+                <p>
+                    Certaines fonctionnalités nécessitent des services tiers. Lorsque ces services sont utilisés, des données techniques ou des requêtes peuvent leur être transmises afin de fournir la fonctionnalité demandée.
+                </p>
+
+                <h3>YouTube et YouTube Data API</h3>
+                <p>
+                    KarAndroid peut utiliser YouTube pour rechercher et lire des vidéos publiques. Les requêtes de recherche, identifiants vidéo et informations techniques nécessaires à la lecture peuvent être traités par Google/YouTube conformément à leurs propres politiques.
+                </p>
+                <p>
+                    Politique de confidentialité Google : <a href="https://policies.google.com/privacy" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+                </p>
+
+                <h3>LRCLib</h3>
+                <p>
+                    KarAndroid peut interroger LRCLib pour rechercher des paroles synchronisées. Les requêtes peuvent contenir le titre, l'artiste ou l'identifiant YouTube nécessaires à la recherche de paroles.
+                </p>
+                <p>
+                    Site du service : <a href="https://lrclib.net" rel="noopener noreferrer">https://lrclib.net</a>
+                </p>
+
+                <h3>Google Cast</h3>
+                <p>
+                    Si l'utilisateur utilise la fonction Cast, des données techniques nécessaires à la connexion et à la lecture sur l'appareil compatible Cast peuvent être traitées par les composants Google Cast.
+                </p>
+
+                <h3>Google Play Billing</h3>
+                <p>
+                    Les dons intégrés sont traités par Google Play. KarAndroid ne reçoit pas les données bancaires de l'utilisateur. L'application conserve seulement un état local permettant de savoir qu'un don a été confirmé et consommé.
+                </p>
+
+                <h3>Google Play In-App Updates</h3>
+                <p>
+                    La vérification de mise à jour peut utiliser les services Google Play afin de savoir si une nouvelle version est disponible depuis Google Play.
+                </p>
+
+                <h3>ML Kit Translate</h3>
+                <p>
+                    Si la fonction de traduction est utilisée, KarAndroid peut utiliser ML Kit Translate. Selon la configuration et les modèles disponibles, certaines ressources de traduction peuvent être téléchargées via les services Google. La traduction est destinée à fonctionner localement sur l'appareil une fois les modèles disponibles.
+                </p>
+            </section>
+
+            <section aria-labelledby="partage">
+                <h2 id="partage">6. Partage des données</h2>
+                <p>
+                    Le développeur de KarAndroid ne vend pas les données des utilisateurs et ne partage pas volontairement les données locales avec des tiers à des fins publicitaires.
+                </p>
+                <p>
+                    Des données peuvent toutefois être transmises dans les cas suivants :
+                </p>
+                <ul>
+                    <li>lorsque l'utilisateur lance une recherche ou une lecture via un service tiers ;</li>
+                    <li>lorsque l'utilisateur utilise Google Cast ;</li>
+                    <li>lorsque l'utilisateur effectue un don via Google Play ;</li>
+                    <li>lorsque l'utilisateur exporte ou partage volontairement des playlists, paroles ou journaux techniques via le système de partage Android.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="conservation">
+                <h2 id="conservation">7. Conservation et suppression</h2>
+                <ul>
+                    <li>Les playlists, réglages, paroles locales, historiques et journaux techniques sont conservés localement tant que l'application reste installée ou tant que l'utilisateur ne les supprime pas.</li>
+                    <li>La désinstallation de l'application supprime normalement les données locales associées à KarAndroid.</li>
+                    <li>Les journaux techniques locaux peuvent être supprimés depuis l'application si l'option correspondante est disponible.</li>
+                    <li>Les données traitées par les services tiers sont soumises aux politiques de ces services.</li>
+                </ul>
+                <div class="notice success">
+                    KarAndroid désactive la sauvegarde Android automatique de l'application afin de limiter la copie de données locales sensibles dans une sauvegarde système.
+                </div>
+            </section>
+
+            <section aria-labelledby="securite">
+                <h2 id="securite">8. Sécurité</h2>
+                <p>
+                    KarAndroid applique des mesures raisonnables pour limiter les risques liés aux données locales et aux communications réseau.
+                </p>
+                <ul>
+                    <li>Les communications réseau de l'application utilisent des connexions sécurisées lorsque les services distants sont appelés.</li>
+                    <li>L'application ne stocke pas de mot de passe utilisateur.</li>
+                    <li>L'application ne reçoit pas les informations de carte bancaire liées aux dons Google Play.</li>
+                    <li>Les journaux techniques restent locaux sauf action volontaire de partage par l'utilisateur.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="enfants">
+                <h2 id="enfants">9. Enfants</h2>
+                <p>
+                    KarAndroid n'est pas conçue spécifiquement pour les enfants et ne cherche pas à collecter sciemment des données personnelles d'enfants. Si vous pensez qu'une donnée personnelle d'un enfant a été transmise au développeur par erreur, vous pouvez demander sa suppression via l'adresse de contact indiquée ci-dessus.
+                </p>
+            </section>
+
+            <section aria-labelledby="droits">
+                <h2 id="droits">10. Droits et demandes utilisateur</h2>
+                <p>
+                    Comme la majorité des données de KarAndroid sont stockées localement sur l'appareil, l'utilisateur peut les gérer directement dans l'application ou en supprimant les données de l'application depuis Android.
+                </p>
+                <p>
+                    Pour toute demande concernant une donnée éventuellement transmise volontairement au développeur, vous pouvez écrire à : <a href="mailto:camlot47@gmail.com">contact</a>.
+                </p>
+            </section>
+
+            <section aria-labelledby="modifications">
+                <h2 id="modifications">11. Modifications de cette politique</h2>
+                <p>
+                    Cette politique peut être mise à jour afin de refléter les évolutions de l'application, des services utilisés ou des exigences réglementaires et plateformes. La version applicable est celle publiée sur cette page.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            © 2026 KarAndroid. Tous droits réservés.
+        </footer>
+    </div>
+</div>
+</body>
+</html>
